@@ -51,13 +51,13 @@
                     <pre>
     API Endpoint
 
-        https://api.westeros.com/
+        http://impacthackathon.herokuapp.com/result
                 </pre>
                     <p>
-                        The Westeros API provides programmatic access to read Game of Thrones data. Retrieve a character, provide an oauth connexion, retrieve a familly, filter them, etc. 
+                        The CPL API when requested with the flipkart URL of the corresponding product, would fetch details like Cost of the Product, Warranty of the Product, Rating of the Product, Monthly Cost per Lifetime, Value for Money Aspects of the Product and stores it cloud for later retrieval. 
                     </p>
                     <p>
-                        To use this API, you need an <strong>API key</strong>. Please contact us at <a href="mailto:jon.snow@nightswatch.wes">jon.snow@nightswatch.wes</a> to get your own API key. 
+                        To use this API, you need an <strong>API key</strong>. Please contact us at <a href="mailto:saiadarshsivakumar@gmail.com">saiadarshsivakumar@gmail.com</a> to get your own API key. 
                     </p>
                 </div>
                 <div class="overflow-hidden content-section" id="content-get-characters">
@@ -65,15 +65,13 @@
                     <pre><code class="bash">
 # Here is a curl example
 curl \
--X POST http://api.westeros.com/character/get \
+-X POST http://impacthackathon.herokuapp.com/result \
 -F 'secret_key=your_api_key' \
--F 'house=Stark,Bolton' \
--F 'offset=0' \
--F 'limit=50'
+-D "Name={{url}}"
                 </code></pre>
                     <p>
                         To get characters you need to make a POST call to the following url :<br>
-                        <code class="higlighted">http://api.westeros.com/character/get</code>
+                        <code class="higlighted">http://impacthackathon.herokuapp.com/result</code>
                     </p>
                     <br>
                     <pre><code class="json">
